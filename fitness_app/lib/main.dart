@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'login/login_screen.dart';
+import 'signup/signup_screen.dart';
 import 'add_exercise/add_exercise_screen.dart';
+import 'faq/faq_screen.dart';
+import 'profile/profile_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -16,24 +20,11 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        //   colorScheme: ColorScheme(
-        //       brightness: brightness,
-        //       primary: primary,
-        //       onPrimary: onPrimary,
-        //       secondary:  const Color.fromRGBO(34, 49, 79, 0),
-        //       onSecondary: onSecondary,
-        //       error: error,
-        //       onError: onError,
-        //       background: background,
-        //       onBackground: onBackground,
-        //       surface: surface,
-        //       onSurface: onSurface),
-        // ),
-        backgroundColor: const Color.fromRGBO(34, 49, 79, 100),
-        primaryColor: const Color.fromRGBO(12, 27, 56, 100),
-        accentColor: const Color.fromRGBO(54, 78, 125, 100),
+        backgroundColor: const Color(0XFF22314F),
+        primaryColor: const Color(0XFF0C1B38),
+        accentColor: const Color(0XFF364E7D),
       ),
-      home: const AddExerciseScreen(),
+      home: const FAQScreen(),
     );
   }
 }
