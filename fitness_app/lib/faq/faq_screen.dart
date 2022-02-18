@@ -19,7 +19,6 @@ class FAQScreen extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: Icon(
                 Icons.chevron_left,
-                color: Colors.white,
                 size: 40,
               ),
             ),
@@ -34,7 +33,6 @@ class FAQScreen extends StatelessWidget {
               child: const Text(
                 "FAQs",
                 style: TextStyle(
-                  color: Colors.white,
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
                 ),

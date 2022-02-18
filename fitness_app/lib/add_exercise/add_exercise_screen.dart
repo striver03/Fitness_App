@@ -18,7 +18,6 @@ class AddExerciseScreen extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: Icon(
                 Icons.chevron_left,
-                color: Colors.white,
                 size: 40,
               ),
             ),
@@ -33,7 +32,6 @@ class AddExerciseScreen extends StatelessWidget {
                 child: Text(
                   "New Exercise",
                   style: TextStyle(
-                    color: Colors.white,
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
                   ),
@@ -50,9 +48,7 @@ class AddExerciseScreen extends StatelessWidget {
                 child: const Center(
                   child: Text(
                     "Add Image",
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
+                    style: TextStyle(),
                   ),
                 ),
               ),

@@ -16,7 +16,6 @@ class ProfileScreen extends StatelessWidget {
           Text(
             value.toString(),
             style: const TextStyle(
-              color: Colors.white,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -25,7 +24,6 @@ class ProfileScreen extends StatelessWidget {
             child: Text(
               heading,
               style: const TextStyle(
-                color: Colors.white,
                 fontWeight: FontWeight.w300,
               ),
             ),
@@ -49,7 +47,6 @@ class ProfileScreen extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: Icon(
                 Icons.filter_list_outlined,
-                color: Colors.white,
                 size: 30,
               ),
             ),
@@ -58,7 +55,6 @@ class ProfileScreen extends StatelessWidget {
               alignment: Alignment.centerRight,
               child: Icon(
                 Icons.edit,
-                color: Colors.white,
                 size: 30,
               ),
             ),
@@ -78,7 +74,6 @@ class ProfileScreen extends StatelessWidget {
               child: const Center(
                 child: Text(
                   "Profile Image",
-                  style: TextStyle(color: Colors.white),
                 ),
               ),
             ),
@@ -86,7 +81,6 @@ class ProfileScreen extends StatelessWidget {
               margin: const EdgeInsets.all(20),
               child: const Text(
                 "Rishabh Prasad",
-                style: TextStyle(color: Colors.white),
               ),
             ),
             Expanded(

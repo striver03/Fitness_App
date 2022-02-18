@@ -34,11 +34,9 @@ class _QnACardState extends State<QnACard> {
               children: <Widget>[
                 Text(
                   questions[widget.idx],
-                  style: const TextStyle(color: Colors.white),
                 ),
                 const Spacer(),
                 IconButton(
-                  color: Colors.white,
                   icon: _expanded
                       ? const Icon(Icons.expand_less)
                       : const Icon(Icons.expand_more),
@@ -57,8 +55,8 @@ class _QnACardState extends State<QnACard> {
               decoration: const BoxDecoration(
                 color: Color(0XFF172A4F),
                 borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(40),
-                  bottomRight: Radius.circular(40),
+                  bottomLeft: Radius.circular(10),
+                  bottomRight: Radius.circular(10),
                 ),
               ),
               child: Row(
@@ -66,7 +64,6 @@ class _QnACardState extends State<QnACard> {
                   const Spacer(),
                   Text(
                     answers[widget.idx],
-                    style: const TextStyle(color: Colors.white),
                   ),
                   const Spacer(),
                 ],

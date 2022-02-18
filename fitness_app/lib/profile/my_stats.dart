@@ -12,16 +12,12 @@ class MyStats extends StatelessWidget {
   ) {
     return Column(
       children: <Widget>[
-        FaIcon(
-          icon,
-          color: Colors.white,
-        ),
+        FaIcon(icon),
         Padding(
           padding: const EdgeInsets.only(top: 8),
           child: Text(
             heading1,
             style: const TextStyle(
-              color: Colors.white,
               fontWeight: FontWeight.w300,
             ),
           ),
@@ -31,7 +27,6 @@ class MyStats extends StatelessWidget {
           child: Text(
             heading2,
             style: const TextStyle(
-              color: Colors.white,
               fontWeight: FontWeight.w300,
             ),
           ),
@@ -39,7 +34,6 @@ class MyStats extends StatelessWidget {
         Text(
           value.toString(),
           style: const TextStyle(
-            color: Colors.white,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -65,7 +59,6 @@ class MyStats extends StatelessWidget {
             child: const Text(
               "My Stats",
               style: TextStyle(
-                color: Colors.white,
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
               ),
@@ -75,7 +68,6 @@ class MyStats extends StatelessWidget {
             margin: const EdgeInsets.all(8),
             child: const FaIcon(
               FontAwesomeIcons.crown,
-              color: Colors.white,
             ),
           ),
           Container(
@@ -86,14 +78,12 @@ class MyStats extends StatelessWidget {
                 Text(
                   "CURRENT STREAK",
                   style: TextStyle(
-                    color: Colors.white,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 Text(
                   "21",
                   style: TextStyle(
-                    color: Colors.white,
                     fontWeight: FontWeight.bold,
                   ),
                 ),

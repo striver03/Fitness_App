@@ -78,14 +78,12 @@ Container _buildDurationRest(
             padding: const EdgeInsets.all(8),
             child: Text(
               content,
-              style: const TextStyle(color: Colors.white),
             ),
           ),
         ),
         // CupertinoRoundedDurationPicker.show(
         //   ctx,
         //   background: Theme.of(ctx).backgroundColor,
-        //   textColor: Colors.white,
         //   initialDurationPickerMode: CupertinoTimerPickerMode.ms,
         //   initialTimerDuration: Duration(seconds: initialSeconds),
         //   onDurationChanged: (value) {},
@@ -110,7 +108,6 @@ Container _buildDurationRest(
                     itemWidth: 30,
                     itemHeight: 40,
                     value: currVal,
-                    textStyle: const TextStyle(color: Colors.white),
                     selectedTextStyle: const TextStyle(
                       color: Colors.deepOrange,
                       fontSize: 16,
@@ -121,7 +118,6 @@ Container _buildDurationRest(
                   const Text(
                     ":",
                     style: TextStyle(
-                      color: Colors.white,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -131,7 +127,6 @@ Container _buildDurationRest(
                     itemWidth: 30,
                     itemHeight: 40,
                     value: currVal,
-                    textStyle: const TextStyle(color: Colors.white),
                     selectedTextStyle: const TextStyle(
                       color: Colors.deepOrange,
                       fontSize: 16,
@@ -145,7 +140,6 @@ Container _buildDurationRest(
               top: -17.5,
               child: Icon(
                 timeIcon,
-                color: Colors.white,
                 size: 35,
               ),
             ),

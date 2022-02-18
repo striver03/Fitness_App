@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import 'passwordLogIn.dart';
+import 'password_login.dart';
 
 class LogInScreen extends StatelessWidget {
   const LogInScreen({Key? key}) : super(key: key);
@@ -24,7 +24,6 @@ class LogInScreen extends StatelessWidget {
                   padding: const EdgeInsets.all(10),
                   child: const Text(
                     "Skip for now",
-                    style: TextStyle(color: Colors.white),
                   ),
                 ),
                 onPressed: () {},
@@ -56,7 +55,6 @@ class LogInScreen extends StatelessWidget {
                               horizontal: 5,
                             ),
                             child: TextFormField(
-                              style: const TextStyle(color: Colors.white),
                               decoration: InputDecoration(
                                 prefixIcon: const Icon(
                                   Icons.account_circle,
@@ -146,7 +144,6 @@ class LogInScreen extends StatelessWidget {
               child: const Text(
                 "OR",
                 style: TextStyle(
-                  color: Colors.white,
                   fontSize: 18,
                 ),
               ),
@@ -183,7 +180,6 @@ class LogInScreen extends StatelessWidget {
                     const Text(
                       "New to Fitness App?",
                       style: TextStyle(
-                        color: Colors.white,
                         fontSize: 15,
                       ),
                     ),
