@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 
 import 'login/login_screen.dart';
 import 'signup/signup_screen.dart';
-import 'add_exercise/add_exercise_screen.dart';
-import 'faq/faq_screen.dart';
 import 'profile/profile_screen.dart';
+import 'add_exercise/add_exercise_screen.dart';
+import 'add_workout/add_workout_screen.dart';
+import 'calendar/calendar_screen.dart';
+import 'faq/faq_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -42,7 +44,7 @@ class _MyAppState extends State<MyApp> {
         ),
         iconTheme: const IconThemeData(color: Colors.white),
       ),
-      home: const FAQScreen(),
+      home: const AddWorkoutScreen(),
     );
   }
 }

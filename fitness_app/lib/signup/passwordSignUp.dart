@@ -23,11 +23,9 @@ class _PasswordSignUpState extends State<PasswordSignUp> {
             alignment: Alignment.centerLeft,
             child: const Text(
               "Confirm Password",
-              style: TextStyle(color: Colors.white),
             ),
           ),
           TextFormField(
-            style: const TextStyle(color: Colors.white),
             decoration: InputDecoration(
               prefixIcon: const Icon(
                 Icons.vpn_key,

@@ -45,11 +45,9 @@ class SignUpScreen extends StatelessWidget {
                                 alignment: Alignment.centerLeft,
                                 child: const Text(
                                   "Username",
-                                  style: TextStyle(color: Colors.white),
                                 ),
                               ),
                               TextFormField(
-                                style: const TextStyle(color: Colors.white),
                                 decoration: InputDecoration(
                                   prefixIcon: const Icon(
                                     Icons.account_circle,
@@ -63,8 +61,10 @@ class SignUpScreen extends StatelessWidget {
                                       color: Theme.of(context).primaryColor,
                                     ),
                                     child: IconButton(
-                                      icon: const Icon(Icons.info_outline),
-                                      color: Colors.white,
+                                      icon: const Icon(
+                                        Icons.info_outline,
+                                        color: Colors.white,
+                                      ),
                                       onPressed: () {},
                                     ),
                                   ),
@@ -96,7 +96,6 @@ class SignUpScreen extends StatelessWidget {
                                 alignment: Alignment.centerLeft,
                                 child: const Text(
                                   "Password",
-                                  style: TextStyle(color: Colors.white),
                                 ),
                               ),
                               TextFormField(
@@ -114,8 +113,10 @@ class SignUpScreen extends StatelessWidget {
                                     ),
                                     showDuration: const Duration(seconds: 2),
                                     child: IconButton(
-                                      icon: const Icon(Icons.info_outline),
-                                      color: Colors.white,
+                                      icon: const Icon(
+                                        Icons.info_outline,
+                                        color: Colors.white,
+                                      ),
                                       onPressed: () {},
                                     ),
                                   ),
@@ -192,10 +193,14 @@ class SignUpScreen extends StatelessWidget {
                     Text(
                       "Sign up using",
                       style: TextStyle(
+                        color: Colors.black,
                         fontSize: 16,
                       ),
                     ),
-                    FaIcon(FontAwesomeIcons.google),
+                    FaIcon(
+                      FontAwesomeIcons.google,
+                      color: Colors.black,
+                    ),
                   ],
                 ),
               ),
