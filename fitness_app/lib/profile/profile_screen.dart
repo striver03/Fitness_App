@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
 import 'my_stats.dart';
+import 'graphs/my_analytics.dart';
+import 'insights/insights.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({Key? key}) : super(key: key);
 
+// Function to create Basic Details Row (Age, Weight, Height)
   Container _buildBasicDetail(int value, String heading) {
     return Container(
       padding: const EdgeInsets.symmetric(
@@ -106,6 +109,22 @@ class ProfileScreen extends StatelessWidget {
                             padding: const EdgeInsets.all(8),
                             width: deviceSize.width * 0.95,
                             child: const MyStats(),
+                          ),
+                        ),
+                        Align(
+                          child: Container(
+                            margin: const EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(8),
+                            width: deviceSize.width * 0.95,
+                            child: const MyAnalytics(),
+                          ),
+                        ),
+                        Align(
+                          child: Container(
+                            margin: const EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(8),
+                            width: deviceSize.width * 0.95,
+                            child: const Insights(),
                           ),
                         ),
                       ],

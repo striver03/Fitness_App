@@ -10,14 +10,15 @@ var _daysMap = {
   'Saturday': false,
 };
 
-class Repetition extends StatefulWidget {
-  const Repetition({Key? key}) : super(key: key);
+class AddRepetition extends StatefulWidget {
+  const AddRepetition({Key? key}) : super(key: key);
 
   @override
-  _RepetitionState createState() => _RepetitionState();
+  _AddRepetitionState createState() => _AddRepetitionState();
 }
 
-class _RepetitionState extends State<Repetition> {
+class _AddRepetitionState extends State<AddRepetition> {
+  // Function to build each day
   TextButton _buildDaysButton(BuildContext ctx, String day, String weekDay) {
     return TextButton(
       child: Text(

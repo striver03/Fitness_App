@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'calendar.dart';
+import 'activity.dart';
 
 class CalendarScreen extends StatelessWidget {
   const CalendarScreen({Key? key}) : super(key: key);
@@ -26,7 +27,7 @@ class CalendarScreen extends StatelessWidget {
           ),
         ),
         body: ListView(
-          children: const <Widget>[
+          children: <Widget>[
             Align(
               child: Text(
                 "History",
@@ -39,6 +40,7 @@ class CalendarScreen extends StatelessWidget {
             SizedBox(height: 80),
             Calendar(),
             SizedBox(height: 50),
+            Activity(DateTime.now()),
           ],
         ),
       ),

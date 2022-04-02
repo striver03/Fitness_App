@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'add_exercise_image.dart';
-import 'add_exercise_form_card.dart';
+import 'edit_exercise_form_card.dart';
 
-class AddExerciseScreen extends StatelessWidget {
-  const AddExerciseScreen({Key? key}) : super(key: key);
+class EditExerciseScreen extends StatelessWidget {
+  const EditExerciseScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -28,8 +27,8 @@ class AddExerciseScreen extends StatelessWidget {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
-            children: const <Widget>[
-              Center(
+            children: <Widget>[
+              const Center(
                 child: Text(
                   "New Exercise",
                   style: TextStyle(
@@ -38,10 +37,22 @@ class AddExerciseScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 20),
-              AddExerciseImage(),
-              SizedBox(height: 50),
-              AddExerciseFormCard(),
+              Container(
+                width: 130,
+                height: 130,
+                margin: const EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                  color: const Color.fromRGBO(154, 143, 143, 100),
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                child: const Center(
+                  child: Text(
+                    "Add Image",
+                    style: TextStyle(),
+                  ),
+                ),
+              ),
+              const EditExerciseFormCard(),
             ],
           ),
         ),

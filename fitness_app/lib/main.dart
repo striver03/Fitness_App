@@ -1,10 +1,22 @@
 import 'package:flutter/material.dart';
 
+// Authentication
 import 'login/login_screen.dart';
 import 'signup/signup_screen.dart';
+
+// Profile
 import 'profile/profile_screen.dart';
+import 'add_profile/add_profile_screen.dart';
+import 'edit_profile/edit_profile_screen.dart';
+
+// Exercise
 import 'add_exercise/add_exercise_screen.dart';
+import 'edit_exercise/edit_exercise_screen.dart';
+
+// Workout
 import 'add_workout/add_workout_screen.dart';
+import 'edit_workout/edit_workout_screen.dart';
+
 import 'calendar/calendar_screen.dart';
 import 'faq/faq_screen.dart';
 
@@ -44,7 +56,7 @@ class _MyAppState extends State<MyApp> {
         ),
         iconTheme: const IconThemeData(color: Colors.white),
       ),
-      home: const AddWorkoutScreen(),
+      home: const AddExerciseScreen(),
     );
   }
 }

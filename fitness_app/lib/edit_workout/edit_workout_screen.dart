@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'add_repetition.dart';
-import 'add_exercise_in_list.dart';
+import 'edit_repetition.dart';
 
-class AddWorkoutScreen extends StatelessWidget {
-  const AddWorkoutScreen({Key? key}) : super(key: key);
+class EditWorkoutScreen extends StatelessWidget {
+  const EditWorkoutScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -81,9 +80,7 @@ class AddWorkoutScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const AddRepetition(),
-                    const SizedBox(height: 20),
-                    const AddExerciseInList(),
+                    const EditRepetition(),
                   ],
                 ),
               ),
